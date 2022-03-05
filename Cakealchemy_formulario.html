@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width = device-width inicial-scale=1.0">
+        <title>Cakealchemy</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn/font-awesome/4.6.0/css/font-awesome.mim.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header> 
+            <img src="images/1.png" alt="Cakealchemy" width="232px" height="191px">
+            <nav>
+                <li><a href="Cakealchemy.html" >Inicio</a></li>
+                <li><a href="Cakealchemy_productos.html" >Productos</a></li>
+                <li><a href="#" >Cuenta</a></li>
+            </nav>
+        </header>
+        
+        <section class="banner-area"> 
+            <div class="banner-img"></div>
+            <h1>Formulario </h1>
+            <h3>Cakealchemy</h3>
+        </section>
+        <section class="about-area" id="about">
+            <h3 class="section-title">Formulario de compra</h3>
+            <h2>Cakealchemy</h2>
+            <p>
+                Para realizar tu compra es necesario que realices el siguiente fomrulario, donde te pedira datos personales y del pastel.
+            </p>
+            <br>
+            <form action="/accion.js" id="form1" method="post" class="form-content">
+                <label for="nombre" >Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                <label for="Telefono">Telefono:</label>
+                <input type="text" id="Telefono" name="Telefono"><br><br>
+                <label for="nombre">Correo electronico:</label>
+                <input type="text" id="Correo" name="Correo electronico"><br><br>
+                <label for="nombre">Descripción del pastel:</label>
+                <input type="text" id="Pasteles" name="Descripciondel pastel"><br><br>
+                <label for="nombre">Color del pastel</label>
+                <input type="color" id="color1" name="color1"><br><br>
+                <label for="nombre">Selección de decoracion:</label>
+                <input list="decoracion">
+                <datalist id="decoracion">
+                    <option value="Infantil">
+                    <option value="Boda">
+                    <option value="Temporada">
+                    <option value="Elegante">
+                    <option value="Frances">
+                    <option value="Color">
+                    <option value="Boda">
+                    <option value="Temporada">
+                    <option value="Elegante">
+                    <option value="Frances">
+                    <option value="Foundant">
+                </datalist>
+                <br><br>
+                <label for="Relleno">Selección de relleno:</label>
+                <input list="relleno">
+                <datalist id="relleno">
+                    <option value="Chocolate">
+                    <option value="Tres leches fresa">
+                    <option value="Oreo">
+                    <option value="Mango">
+                    <option value="Frutos rojos">
+                    <option value="Vainilla">
+                    <option value="Red velvet">
+                    <option value="arcoiris">
+                    <option value="frambuesa">
+                </datalist>
+                <br><br>
+                <label for="nombre">Fecha del evento:</label>
+                <input type="date" id="fecha1" name="fecha1"><br><br><br>
+
+                <input type="submit" class="about-btn" value="Submit">
+                <input type="reset" class="about-btn"><br><br>
+            </form>
+            
+            
+
+            <a href="#" class="about-btn" onclick="alert('Pedido en proceso');">Realiza tu pedido...</a>
+        </section>
+        <footer>
+        <section class="services-area" id="services">
+            <h3 class="section-title">Servicios</h3>
+            <ul class="service-content">
+                <li>
+                    <i class="fa fa-laptop"></i>
+                    <h4>Direccion</h4>
+                    <p> Arboledas de michoacan No°45H, Col. El gatito valiente Alcaldia Mirada
+                </li>
+                <li>
+                    <i class="fa fa-signal"></i>
+                    <h4>Servicio a Domicilio</h4>
+                    <p>
+                        Realiza tus pedidos y recibelo desde la comodida de tu  hogar  sin necesidad de moverte de casa ni perder tu valioso tiempo. 
+                    </p>
+                </li>
+                <li>
+                    <i class="fa fa-picture-o"></i>
+                    <h4>Horario</h4>
+                    <p>
+                        Lunes a Sábado de 8:00 AM a 9:00 PM<br>
+                        Domingos de 9:00 AM a 7:00 PM
+
+                    </p>
+                </li>
+            </ul>
+        </section>
+        
+            
+        </footer>
+    </body>
+</html>
